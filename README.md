@@ -1,1 +1,5 @@
 # Coronavirus
+
+Our project consists of main elements: creating a site, implementing a speech synthesizer module, and finally creating a chatbot responding to questions asked in speech.
+
+In the first half of our project we will use HTML and CSS, and Bootstrap to create a website with our project information and a space for our synthetizer and chatbot.
