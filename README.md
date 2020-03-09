@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-This is a test.
-=======
 # Coronavirus
 
 Our project consists of main elements: creating a site, implementing a speech synthesizer module, and finally creating a chatbot responding to questions asked in speech.
