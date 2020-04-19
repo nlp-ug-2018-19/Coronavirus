@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="favicon.png" type="image/png"/>
+    <style>
+        @media screen and (max-width: 600px) {
+            .box {
+                flex-wrap: wrap;
+            }
+            .item {
+                width: 100%;
+                height: auto;
+            }
+            body {
+                padding: 0%;
+            }
+            #description {
+                width: 100%;
+            }
+        }
+        
+        body {
+            width: 100%;
+            padding: 15px 15px 15px 15px;
+            background-color: #fcd4ed;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        h2 {
+            text-align: center;
+            color: black;
+        }
+        p {
+            text-align: justify;
+            color: black;
+        }
+        
+        .box {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            padding: 15px 15px 15px 15px;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .item {
+            padding: 15px 15px 15px 15px;
+            height: 500px;
+            width: auto;
+            overflow: hidden;
+        }
+        .video {
+            padding: 15px;
+            overflow: visible;
+        }
+
+        #description {
+            width: 25%;
+        }
+
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<section class="header" style="justify-content: baseline; padding: 2%; height: 150px; background-color: #ffa3dd;">
+    <div><h1 style="font-size: large;">You should try</h1></div>
+    <div><h1>Online Shooping!</h1></div>
+</section>
+<main class="box">
+    <section class="item" id="description">
+    <h2>What is it all about?</h2>
+    <p>Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser. Consumers find a product of interest by visiting the website of the retailer directly or by searching among alternative vendors using a shopping search engine, which displays the same product's availability and pricing at different e-retailers. As of 2020, customers can shop online using a range of different computers and devices, including desktop computers, laptops, tablet computers or smartphones.</p>
+    </section>
+    <div class="item">
+        <img src="https://gfx.chillizet.pl/var/chillizet/storage/images/styl-zycia/dom/zakupy-spozywcze-online-o-czym-warto-wiedziec-23605/3512224-1-pol-PL/Zakupy-spozywcze-online-czym-kierowac-sie-podczas-wyboru-dostawcy_article.jpg" alt="Yoga" class="responsive">
+    </div>
+</main>
+
+<!-- width="560" height="315" -->
+    <section class="box" class="jumbotron" style="justify-content: center; align-items: center; background-color: #ffa3dd; border-radius: 5px;>
+        <div style="text-align: justify;">
+            <h2 style="color: black;">How to start?</h2>
+        </div>
+        
+        <div class="video">
+        <iframe src="https://www.youtube.com/embed/mZzUiqqkD5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+        <iframe src="https://www.youtube.com/embed/acnhhnUWJ8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+        <iframe src="https://www.youtube.com/embed/S8DQG8So06Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+</body>
+</html>
