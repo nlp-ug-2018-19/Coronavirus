@@ -1,4 +1,4 @@
-$(".btn").click(function(){
-    alert("button clicked")
-});
+// $(".btn").click(function(){
+//     alert("button clicked")
+// });
 
