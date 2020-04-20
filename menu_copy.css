@@ -161,7 +161,8 @@
 	width: 30%;
 	float: left;
 	margin: 1.66%;
-	height: 550px;
+	height: 670px;
+	
 	
 
 }
@@ -186,6 +187,7 @@ background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, F
 	font-family: 'Indie Flower', cursive;
 	position: absolute;
 	bottom: 0;
+	
 	
 }
 
