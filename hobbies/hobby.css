@@ -1,15 +1,22 @@
 @media screen and (max-width: 600px) {
+    * {
+        padding: 0 0 0 0;
+    }
+
     .box {
         flex-wrap: wrap;
+        flex-direction: column;    
     }
     .item {
         width: 100%;
         height: auto;
     }
-    body {
-        padding: 0%;
+    .description: {
+        flex-shrink: 0;
     }
-    #description: {
+    #pic {
+        display: flex;
+        height: auto;
         width: 100%;
     }
 }
@@ -37,24 +44,24 @@ p {
     width: 100%;
     height: auto;
     padding: 15px 15px 15px 15px;
+    justify-content: center;
+    align-items: center
 }
 .header {
     display: flex;
     flex-direction: column;
     width: 100%;
     border-radius: 5px;
+    justify-content: baseline;
+    padding: 2%;
+    height: 150px;
+    background-color: orangered;
 }
 .item {
     padding: 15px 15px 15px 15px;
-    height: 500px;
-    width: auto;
     overflow: hidden;
 }
 .video {
     padding: 15px;
     overflow: visible;
-}
-
-#description {
-    width: 25%;
 }
