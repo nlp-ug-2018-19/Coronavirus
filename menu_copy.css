@@ -143,28 +143,19 @@
 #pierwszydiv{
 	justify-content: center;
 	text-align: center;
-	margin-top: 5%;
+	margin-top: 1rem;
+	height: 60px;
 	font-size: 25px;
 	font-family: 'Bangers', cursive;
-	color: white;
+	color: bisque;
 }
+
 #drugidiv{
 	border: 2px solid black;
 	margin-top: 50px;
 	height: 200px;
 	margin-left: 5%;
 	margin-right: 5%;
-}
-
-
-.card {
-	width: 30%;
-	float: left;
-	margin: 1.66%;
-	height: 670px;
-	
-	
-
 }
 
 .carousel-item {
@@ -186,9 +177,14 @@ background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, F
 .btn{
 	font-family: 'Indie Flower', cursive;
 	position: absolute;
-	bottom: 0;
-	
-	
+	bottom: 10;	
+}
+
+.card {
+	width: 30%;
+	margin: 1.66%;
+	float: left;
+	height: 450px;
 }
 
 .card:hover {
@@ -202,8 +198,13 @@ background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, F
 	font-family: 'Righteous', cursive;
 	
 }
+
 .card-text {
 	font-family: 'Gochi Hand', cursive;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
 i {
 	float: right;
@@ -211,5 +212,17 @@ i {
 }
 
 .card img {
-	height: 50%;
+	height: 55%;
+}
+
+.img-caption {
+	position: absolute;
+	text-align: left;
+	color: bisque;
+	background-color: rgba(5, 2, 34, 0.5);
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	width: inherit;
+	height: auto;
+	min-height: 15%;
+	padding: 30px;
 }
