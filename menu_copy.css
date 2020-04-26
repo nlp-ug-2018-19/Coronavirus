@@ -161,7 +161,7 @@
 	width: 30%;
 	float: left;
 	margin: 1.66%;
-	height: 670px;
+	height: 600px;
 	
 	
 
@@ -171,6 +171,10 @@
 	height: 10%;
 	size: 10px;
 	margin-top: 50px;
+	
+}
+.carousel-inner {
+	width: 50%;
 }
 .cards{
 	height: 50%;
@@ -212,4 +216,12 @@ i {
 
 .card img {
 	height: 50%;
+}
+
+.indicator {
+	opacity: 0.1;
+}
+
+h1 {
+	font-size: 10vw;
 }
