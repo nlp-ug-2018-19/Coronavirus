@@ -3,8 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <title>Title page</title>
-  <!-- linking clippy -->
-  <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
+  <link rel='stylesheet' type="text/css" href='chatbot.css'>
 	<link rel="stylesheet" type="text/css" href="menu_copy.css">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Roboto&display=swap" rel="stylesheet">
 	<!-- linking Bootstrap -->
@@ -16,6 +15,10 @@
   <link rel="icon" href="notes/favicon.png" type="image/png"/>
 </head>
 <body>
+  <div id="chatbot-container" >
+    <img id='robot' class="voice" src='robot.png'>
+    <div id='circle'> </div>
+  </div>
 	<div class="menu-wrap">
 		<input type="checkbox" class="toggler">
 		<div class="hamburger">
@@ -150,27 +153,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<script src="https://unpkg.com/jquery@3.2.1"></script>
-<script src="https://unpkg.com/clippyjs@latest"></script>
-
-<script type="text/javascript">
-
-clippy.load('Links', function(agent){
-    const clp = document.querySelector('.clippy');
-
-    // Do anything with the loaded agent
-    agent.show();
-    console.log(agent.animations());
-
-    agent.speak('Hey, are you bored? I can help you.');
-
-    clp.addEventListener('click', ()=> {
-    agent.speak('Hey!');
-    agent.play('GetAttention');
-    })
-});
-
-</script>
+<script src='chatbot.js'></script>
 
 <script src="menu.js"></script>
 <script src="menu_copy.js"></script>
