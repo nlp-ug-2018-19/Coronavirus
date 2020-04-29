@@ -226,3 +226,11 @@ i {
 	min-height: 15%;
 	padding: 30px;
 }
+
+#chatbot-container {
+	width: 13.5%;
+}
+
+.visibility {
+	opacity: 0;
+}
