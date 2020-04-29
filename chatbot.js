@@ -8,6 +8,9 @@ const robot = document.querySelector('#robot')
 const circle = document.querySelector('#circle')
 const chatbotContainer = document.querySelector('#chatbot-container')
 robot.addEventListener('click', startChatbot);
+robot.addEventListener('dblclick',function(){
+    chatbotContainer.classList.toggle('visibility')
+});
 
 //show chatbot container on click
 function startChatbot() {
