@@ -63,6 +63,16 @@ function botVoice(message) {
     if(message.includes('fine')) {
         speech.text = 'Nice to hear that. How can I help you today?'
     }
+    if(message.includes('Can you help me')) {
+        speech.text = 'yes of course, how can I serve you?'
+    }
+    if(message.includes('I would like to play color game')) {
+        speech.text = 'Great choice, redirecting to Golor Game '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+
+    }
+    
+
 
     speech.volume = 1;
     speech.rate = 1;
@@ -93,3 +103,5 @@ recorder.onresult = (event) => {
 voice.addEventListener('click',function(){
     recorder.start();
 });
+
+
