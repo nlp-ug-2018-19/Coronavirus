@@ -175,7 +175,8 @@ background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, F
 
 }
 .btn{
-	font-family: 'Indie Flower', cursive;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	/*font-family: 'Indie Flower', cursive;*/
 	position: absolute;
 	bottom: 10;	
 }
@@ -195,12 +196,14 @@ background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, F
 	justify-content: center;
 }
 .card-title {
-	font-family: 'Righteous', cursive;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	/*font-family: 'Righteous', cursive;*/
 	
 }
 
 .card-text {
-	font-family: 'Gochi Hand', cursive;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	/*font-family: 'Gochi Hand', cursive;*/
 	overflow: hidden;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
@@ -233,4 +236,11 @@ i {
 
 .visibility {
 	opacity: 0;
+}
+
+.title {
+	position: relative;
+	top: 10px;
+	display: flex;
+	justify-content: center;
 }
