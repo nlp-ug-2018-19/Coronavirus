@@ -56,66 +56,64 @@ function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = "Sorry, I did not understand that";
 
-    if(message.includes('how are you')) {
+    if(message.toLowerCase().includes('how are you')) {
         speech.text = 'I am fine, thanks. How are you?'
     }
     
-    if(message.includes('fine')) {
+    if(message.toLowerCase().includes('fine')) {
         speech.text = 'Nice to hear that. How can I help you today?'
     }
-    if(message.includes('Can you help me')) {
+    if(message.toLowerCase().includes('Can you help me')) {
         speech.text = 'yes of course, how can I serve you?'
     }
-    if(message.includes('I would like to play color game')) {
+    if(message.toLowerCase().includes('I would like to play color game')) {
         speech.text = 'Great choice, redirecting to Golor Game '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('color game')) {
+    if(message.toLowerCase().includes('color game')) {
         speech.text = 'Great choice, redirecting to Golor Game '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('Google')) {
+    if(message.toLowerCase().includes('google')) {
         speech.text = 'Great choice, redirecting to Google '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('Netflix')) {
+    if(message.toLowerCase().includes('netflix')) {
         speech.text = 'Great choice, redirecting to our subpage about Netflix '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('Knitting')) {
+    if(message.toLowerCase().includes('knitting')) {
         speech.text = 'Seriously, you like knitting? Ok, lets find something adequate for you '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('Yoga')) {
+    if(message.toLowerCase().includes('yoga')) {
         speech.text = 'Interesting choice, redirecting to a yoga webpage '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('video games')) {
+    if(message.toLowerCase().includes('video games')) {
         speech.text = 'Excelent choice, redirecting to a website about video games '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('Online shopping')) {
+    if(message.toLowerCase().includes('online shopping')) {
         speech.text = 'Ok, but first check if you have enough money. Just kidding, redirecting to a website about online shopping '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('Gardening')) {
+    if(message.toLowerCase().includes('gardening')) {
         speech.text = 'Great choice, redirecting to a gardening website '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('Cooking')) {
+    if(message.toLowerCase().includes('cooking')) {
         speech.text = 'Great choice, redirecting a website about cooking '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('Who are you?')) {
+    if(message.toLowerCase().includes('who are you?')) {
         speech.text = 'I am a chatbot created by a CoronaVirus team members '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-    if(message.includes('What are your functions')) {
+    if(message.toLowerCase().includes('what are your functions')) {
         speech.text = 'I am here to entertain you and lead you through our hobby page '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
-
-    
 
 
     speech.volume = 1;
