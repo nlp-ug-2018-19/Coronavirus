@@ -66,9 +66,42 @@ function botVoice(message) {
     if(message.includes('Can you help me')) {
         speech.text = 'yes of course, how can I serve you?'
     }
-    if(message.includes('I would like to play color game')) {
+    if(message.includes('color game')) {
         speech.text = 'Great choice, redirecting to Golor Game '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('Google')) {
+        speech.text = 'Great choice, redirecting to Google '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('Netflix')) {
+        speech.text = 'Great choice, redirecting to our subpage about Netflix '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('Knitting')) {
+        speech.text = 'Seriously, you like knitting? Ok, lets find something adequate for you '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('Yoga')) {
+        speech.text = 'Interesting choice, redirecting to a yoga webpage '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('video games')) {
+        speech.text = 'Excelent choice, redirecting to a website about video games '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('Online shopping')) {
+        speech.text = 'Ok, but first check if you have enough money. Just kidding, redirecting to a website about online shopping '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('Gardening')) {
+        speech.text = 'Great choice, redirecting to a gardening website '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('Cooking')) {
+        speech.text = 'Great choice, redirecting a website about cooking '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('Who are you?')) {
+        speech.text = 'I am a chatbot created by a CoronaVirus team members '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    if(message.includes('What are your functions')) {
+        speech.text = 'I am here to entertain you and lead you through our hobby page '
+        window.location.replace("https://mateuszmagiera.github.io/colorGame/")
+    
+    
+    
 
     }
     
