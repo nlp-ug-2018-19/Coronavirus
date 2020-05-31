@@ -2,95 +2,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Knitting</title>
+    <link rel="stylesheet" href="hobby.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../menu_copy.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" href="favicon.png" type="image/png"/>
     <style>
-        @media screen and (max-width: 600px) {
-            .box {
-                flex-wrap: wrap;
-            }
-            .item {
-                width: 100%;
-                height: auto;
-            }
-            body {
-                padding: 0%;
-            }
-            #description {
-                width: 100%;
-            }
-        }
-        
         body {
-            width: 100%;
-            padding: 15px 15px 15px 15px;
-            background-color: #9cd9e6;
+            background: #9cd9e6;
+        }
+        h2, p {
+            color: black;
         }
         h1 {
-            text-align: center;
             color: white;
         }
-        h2 {
-            text-align: center;
-            color: #4223cc;
-        }
-        p {
-            text-align: justify;
-        }
         
-        .box {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: auto;
-            padding: 15px 15px 15px 15px;
-        }
-        .header {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            border-radius: 5px;        
-        }
-        .item {
-            padding: 15px 15px 15px 15px;
-            height: 500px;
-            width: auto;
-            overflow: hidden;
-        }
-        .video {
-            padding: 15px;
-            overflow: visible;
-        }
-
-        #description {
-            width: 25%;
-        }
-
-        .responsive {
-            width: 100%;
-            height: auto;
-        }
     </style>
 </head>
+
 <body>
-<section class="header" style="justify-content: baseline; padding: 2%; height: 150px; background-color: #2f31b5;">
-    <div><h1 style="font-size: large;">You should try</h1></div>
-    <div><h1>Knitting!</h1></div>
-</section>
+    <div class="menu-wrap">
+		<input type="checkbox" class="toggler">
+		<div class="hamburger">
+			<div></div>
+		</div>
+		<div class="menu">
+			<div>
+				<div>
+					<ul>
+						<li><a href="../index.html" target="blank">Home</a></li>
+						<li><a href="../notes/about_us.html" target="blank">About</a></li>
+            <li><a href="https://mateuszmagiera.github.io/patatap-clone/" target="blank">Patatap</a></li>
+            <li><a href="https://mateuszmagiera.github.io/colorGame/" target="blank">Color Game</a></li>
+            <li><a href="https://mateuszmagiera.github.io/chatBot/" target="blank">Chat Bot</a></li>
+            <li><a href="https://mateuszmagiera.github.io/synthesizer/" target="blank">Speech Synthesizer</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <header class="header" style="background-color: #2f31b5">
+        <div><h1 style="font-size: large;">You should try</h1></div>
+        <div><h1>Knitting!</h1></div>
+    </header>
+
 <main class="box">
-    <section class="item" id="description">
+    <section class="item" style="flex-shrink: 10">
     <h2>What is it all about?</h2>
     <p>Knitting is a method by which yarn is manipulated to create a textile or fabric. Knitting creates stitches: loops of yarn in a row, either flat or in the round. Knitted fabric consists of a number of consecutive rows of connected loops that intermesh with the next and previous rows. As each row is formed, each newly created loop is pulled through one or more loops from the prior row and placed on the gaining needle so that the loops from the prior row can be pulled off the other needle without unraveling.</p>
     </section>
-    <div class="item">
-        <img src="https://cdn.pixabay.com/photo/2015/07/31/15/02/knit-869221_1280.jpg" alt="Knitting" class="responsive">
+    <div class="item" id="pic">
+        <img src="https://cdn.pixabay.com/photo/2017/06/05/10/23/crafts-2373671__480.jpg" alt="Knitting" class="responsive">
     </div>
 </main>
 
 <!-- width="560" height="315" -->
-    <section class="box" class="jumbotron" style="justify-content: center; align-items: center; background-color: #2f31b5; border-radius: 5px;>
-        <div style="text-align: justify;">
-            <h2 style="color: white;">Video tutorials on knitting</h2>
+    <section class="box" class="jumbotron" style="background-color: #2f31b5; border-radius: 5px;"
+        <div>
+            <h2 style="color: white;">Video tutorials on knitting:</h2>
         </div>
         
         <div class="video">
@@ -103,5 +73,11 @@
         <iframe src="https://www.youtube.com/embed/p_R1UDsNOMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="../menu_copy.js"></script>
 </body>
 </html>
