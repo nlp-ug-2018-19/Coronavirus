@@ -3,6 +3,7 @@ const voice2text = document.querySelector('.voice2text');
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recorder = new SpeechRecognition();
+recorder.lang = 'en-US';
 
 const robot = document.querySelector('#robot')
 const circle = document.querySelector('#circle')
