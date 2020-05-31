@@ -17,6 +17,8 @@ robot.addEventListener('dblclick',function(){
 function startChatbot() {
       circle.classList.add('paused');
       chatbotContainer.classList.add('chatbot-container');
+      chatbotContainer.style.overflow="auto";
+      chatbotContainer.style.width="30%";
   }
 //const chatbotContainer = document.querySelector('#chatbot-container')
 
@@ -33,7 +35,7 @@ function addHumanText(text) {
     chatBox.appendChild(chatText)
     //appending whole to a div, and returning it
     chatContainer.appendChild(chatBox)
-    return chatContainer.scrollIntoView();
+    return chatContainer;
 };
 
 
@@ -124,65 +126,68 @@ function botVoice(message) {
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
     // chatbot hobby questions
-    speech.text = "Hi, I’m a friendly bot that will help you find an interesting activity to do in your free time! Firstly, do you like to express yourself in a creative way?"
+    speech.text = "Hi, I am a friendly bot that will help you find an interesting activity to do in your free time! Firstly, do you like to express yourself in a creative way?"
     if(message.toLowerCase().includes('yes')) {
-        speech.text = "Do you prefer two-dimensional or three-dimensional art forms?"
-        if(message.toLowerCase().includes('three')) {
+        speech.text = "Do you prefer to work with paper or fabric?"
+    }
+        if(message.toLowerCase().includes('fabric')) {
             speech.text = 'Nothing like a homemade scarf! Lets find something adequate for you '
             window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/knitting.html")
-        if(message.toLowerCase().includes('two')) {
-            speech.text = "Do you know how to draw?"
-            if(message.toLowerCase().includes('yes')) {
+        }
+    
+        if(message.toLowerCase().includes('paper')) {
+            speech.text = "Do you prefer to draw or paint?"
+        }
+            if(message.toLowerCase().includes('paint')||message.toLowerCase().includes('painting')) {
                 speech.text = 'Great choice, redirecting a website about painting'
                 window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/painting.html")
-            if(message.toLowerCase().includes('no')){
+            }
+        
+            if(message.toLowerCase().includes('draw')||message.toLowerCase().includes('drawing')){
                 speech.text = 'Great choice, redirecting a website about drawing'
                 window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/drawing.html")
             }
-            }
-        }
+        
+        
+    if(message.toLowerCase().includes('no')||message.toLowerCase().includes('nowe')) {
+        speech.text = "Do you want to move around or sit in front of a computer or TV?"
     }
-    if(message.toLowerCase().includes('no')) {
-        speech.text = "Do you want to move around rather than sit in front of a computer or TV?"
-        if(message.toLowerCase().includes(yes)) {
-            speech.text = "Are you hungry?"
-            if(message.toLowerCase().includes('yes')) {
+        if(message.toLowerCase().includes('move')) {
+            speech.text = "Would you rather exercise, grow plants or cook some food?"
+        }
+            if(message.toLowerCase().includes('cook')||message.toLowerCase().includes('food')) {
                 speech.text = 'Great choice, redirecting a website about cooking '
                 window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/cooking.html")
-            if(message.toLowerCase().includes('no')) {
-                speech.text = "Do you feel like exercising?"
-                if(message.toLowerCase().includes('yes')) {
-                    speech.text = 'Interesting choice, redirecting to a yoga webpage '
-                    window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/yoga.html")
-                if(message.toLowerCase().includes('no')) {
-                    speech.text = 'Great choice, redirecting to a gardening website '
-                    window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/gardening.html")
-                }
-                }
             }
+            if(message.toLowerCase().includes('exercise')||message.toLowerCase().includes('workout')||message.toLowerCase().includes('work out')) {
+                speech.text = 'Interesting choice, redirecting to a yoga webpage '
+                window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/yoga.html")
+            }
+            if(message.toLowerCase().includes('plants')||message.toLowerCase().includes('grow')||message.toLowerCase().includes('garden')) {
+                speech.text = 'Great choice, redirecting to a gardening website '
+                window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/gardening.html")
+            }
+    
+        if(message.toLowerCase().includes('sit')||message.toLowerCase().includes('set')) {
+            speech.text = "Would you like to shop or do something else?"
         }
-        }
-        if(message.toLowerCase().includes('no')) {
-            speech.text = "Do you have some spare cash to spend?"
-            if(message.toLowerCase().includes('yes')) {
+            if(message.toLowerCase().includes('shop')) {
                 speech.text = 'Ok, but first check if you have enough money. Just kidding, redirecting to a website about online shopping '
                 window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/onlineshopping.html")
-            if(message.toLowerCase().includes('no')) {
-                speech.text = "Do you feel like watching something?"
-                if(message.toLowerCase().includes('yes')) {
+            }
+            if(message.toLowerCase().includes('else')||message.toLowerCase().includes('other')||message.toLowerCase().includes('another')) {
+                speech.text = "Do you feel like watching something or playing?"
+            }
+                if(message.toLowerCase().includes('watching')||message.toLowerCase().includes('watch')) {
                     speech.text = 'Great choice, redirecting to our subpage about Netflix '
                     window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/netflix.html")
-                if(message.toLowerCase().includes('no')) {
+                }
+                if(message.toLowerCase().includes('playing')||message.toLowerCase().includes('play')) {
                     speech.text = 'Excelent choice, redirecting to a website about video games '
                     window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/videogames.html")            
                 }
-                }
-            }
-        }
-        }
-    }
-    }
-
+                
+        
 
     speech.volume = 1;
     speech.rate = 1;
