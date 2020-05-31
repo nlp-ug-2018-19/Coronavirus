@@ -59,17 +59,8 @@ function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = "Sorry, I did not understand that";
 
-    if(message.toLowerCase().includes('how are you')) {
-        speech.text = 'I am fine, thanks. How are you?'
-    }
     
-    if(message.toLowerCase().includes('fine')) {
-        speech.text = 'Nice to hear that. How can I help you today?'
-    }
-    if(message.toLowerCase().includes('Can you help me')) {
-        speech.text = 'yes of course, how can I serve you?'
-    }
-    if(message.toLowerCase().includes('I would like to play color game')) {
+    if(message.toLowerCase().includes('i would like to play color game')) {
         speech.text = 'Great choice, redirecting to Golor Game '
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
@@ -126,7 +117,7 @@ function botVoice(message) {
         window.location.replace("https://mateuszmagiera.github.io/colorGame/")
     }
     // chatbot hobby questions
-    speech.text = "Hi, I am a friendly bot that will help you find an interesting activity to do in your free time! Firstly, do you like to express yourself in a creative way?"
+    speech.text = "I am a friendly bot that will help you find an interesting activity to do in your free time! Firstly, do you like to express yourself in a creative way?"
     if(message.toLowerCase().includes('yes')) {
         speech.text = "Do you prefer to work with paper or fabric?"
     }
@@ -186,7 +177,42 @@ function botVoice(message) {
                     speech.text = 'Excelent choice, redirecting to a website about video games '
                     window.location.replace("https://nlp-ug-2018-19.github.io/Coronavirus/hobbies/videogames.html")            
                 }
-                
+    //small talk
+        
+    if(message.toLowerCase().includes('how old')||message.toLowerCase().includes('when were you born')) {
+        speech.text = 'I am a chatbot created in 2020 in times of the coronavirus'
+    }
+
+    if(message.toLowerCase().includes('hobby')||message.toLowerCase().includes('do you like')) {
+        speech.text = 'I am a chatbot, the thing i like to do the most is chatting with humans'
+    }
+
+    if(message.toLowerCase().includes('fault')||message.toLowerCase().includes('ashamed')||message.toLowerCase().includes('stupid')) {
+        speech.text = 'I know I am not perfect but please do not hurt my feelings. Just kidding. I have no feelings, not a stupid human. ha ha ha'
+    }
+
+    if(message.toLowerCase().includes('meal')||message.toLowerCase().includes('eat')||message.toLowerCase().includes('dish')) {
+        speech.text = 'I like a couple of bytes of RAMen. ha ha ha'
+    }
+
+    if(message.toLowerCase().includes('how are you')) {
+        speech.text = 'I am fine, thanks. How are you?'
+    }
+    
+    if(message.toLowerCase().includes('fine')) {
+        speech.text = 'Nice to hear that. How can I help you today?'
+    }
+    if(message.toLowerCase().includes('can you help me')) {
+        speech.text = 'yes of course, how can I serve you?'
+    }
+    
+    if(message.toLowerCase().includes('hello')||message.toLowerCase().includes('hi')||message.toLowerCase().includes('good')) {
+        speech.text = 'Hi, how can I help you?'
+    }
+    if(message.toLowerCase().includes('about')||message.toLowerCase().includes('website')||message.toLowerCase().includes('project')) {
+        speech.text = 'You can read more about this project on the page that I just opened for you in a new tab'
+        window.open('https://nlp-ug-2018-19.github.io/Coronavirus/notes/about_us.html','_blank');    
+    }
         
 
     speech.volume = 1;
@@ -213,6 +239,7 @@ recorder.onresult = (event) => {
     element.appendChild(addHumanText(transcript));
     botVoice(transcript);
 };
+
 
 
 voice.addEventListener('click',function(){
