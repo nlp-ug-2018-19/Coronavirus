@@ -33,7 +33,7 @@ function addHumanText(text) {
     chatBox.appendChild(chatText)
     //appending whole to a div, and returning it
     chatContainer.appendChild(chatBox)
-    return chatContainer;
+    return chatContainer.scrollIntoView();
 };
 
 
